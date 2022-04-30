@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  padding-top: 2rem;
+  color: rgba(30, 30, 255, .7);
+  background: rgba(250, 211, 126, 0.7);
+  font-family: 'Water Brush', cursive;
+  font-weight: 100;
+}
+
+h1 {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-top: 2rem;
+  width: clamp(400px, 70vw, 500px);
+  
+  color: white;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 255, .7);
+  border-radius: 20px;
+  background: rgba(30, 30, 255, .5);
+}
+
+form *:not(label) {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  padding: .5rem 0;
+}
+
+input[type=text] {
+  text-align: center;
+}
+
+input[type=submit] {
+  background:rgba(80, 0, 230, 0.5);
+  color: inherit;
+ 
+  transition: all 200ms ease;
+}
+
+input[type=submit]:hover {
+  color:rgba(80, 0, 230, 0.9);
+  background: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  
+  width: clamp(400px, 50vw, 800px);
+  margin-top: 2rem;
+  
+  font-family: sans-serif;
+}
+
+main > * {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  min-height: 25rem;
+  padding: 1rem;
+  text-align: center;
+  
+  background: rgba(0, 187, 25, 0.3);
+  color: rgba(80, 0, 230, 0.9);
+  border: 8px groove rgba(80, 0, 230, 0.9);
+  border-radius: 20px;
+}
