@@ -10,7 +10,7 @@
 El desafío 'mi-desafio' describe el desafio de forma clara y concisa aportando información distinta a la de la tabla.
 
 
-
+<!--TODO preguntar si puedo dejarlo con funciones function en vez de fat arrows y confirmar lo del loop anidado-->
 
 /^\d{1,2}$/.test // positivos hasta 99
 /^-?\d{1,2}$/.test // incluye negativos -99 - 99

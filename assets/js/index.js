@@ -13,6 +13,8 @@ let factorialInit = 1;
  **********************************************/
 
 function valida(e) {
+  e.preventDefault();
+  
   const value = (e.target[0].value);
 
   (/^\d{1,2}$/.test(value) && Number(value < 21))
@@ -23,6 +25,7 @@ function valida(e) {
 /**********************************************
  **          CALCULA Y PINTA VISTA           **
  **********************************************/
+
 function calculaPinta(valor) {
 
   tablaDiv.innerHTML = '';
