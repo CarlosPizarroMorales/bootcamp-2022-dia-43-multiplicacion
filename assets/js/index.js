@@ -9,24 +9,10 @@ let factorialInit = 1;
 
 
 /**********************************************
- **           HANDLER DEL SUBMIT             **
- **********************************************/
-
-function valida(e) {
-  e.preventDefault();
-  
-  const value = (e.target[0].value);
-
-  (/^\d{1,2}$/.test(value) && Number(value < 21))
-    ? calculaPinta(Number(value))
-    : console.log(`${value} es un valor inválido.`);
-}
-
-/**********************************************
  **          CALCULA Y PINTA VISTA           **
  **********************************************/
 
-function calculaPinta(valor) {
+const calculaPinta = (valor) => {
 
   tablaDiv.innerHTML = '';
   factorialDiv.innerHTML = '';
@@ -41,6 +27,20 @@ function calculaPinta(valor) {
   factorialInit = 1;
 }
 
+
+/**********************************************
+ **           HANDLER DEL SUBMIT             **
+ **********************************************/
+
+function valida(e) {
+  e.preventDefault();
+  
+  const value = (e.target[0].value);
+
+  (/^\d{1,2}$/.test(value) && Number(value) < 21 && Number(value) !== 0)
+    ? calculaPinta(Number(value))
+    : console.log(`${value} es un valor inválido.`);
+}
 
 /**********************************************
  **           OTRAS VERSIONES DE:            **
